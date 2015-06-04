@@ -1,0 +1,122 @@
+.jplus>ul li,.jplus>span { 
+  -webkit-transition: all 0.4s ease;                  
+    -moz-transition: all 0.4s ease;                 
+    -o-transition: all 0.4s ease;   
+    -ms-transition: all 0.4s ease;          
+    transition: all 0.4s ease; 
+}
+.jplus {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+  .jplus:hover > #prev, .jplus:hover > #next {
+      width: 10%;
+  }
+  .jplus:hover > .resize {
+    height: 35%;
+  }
+
+.jplus > img {
+  position: absolute;
+  z-index: 0;  
+  width: 100%;
+}
+
+.jplus > img.previous {
+  z-index: 1;
+}
+
+.jplus > img.current {
+  z-index: 2;
+}
+
+#prev, #next {
+  content="";
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  width: 0;
+  top: 0;
+  z-index:99;
+}
+  #prev { 
+    left: 0; 
+    background: -moz-linear-gradient(left,  rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0.5)), color-stop(100%,rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(left,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(left,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 100%);
+    background: -ms-linear-gradient(left,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 100%);
+}
+  #next { 
+    right: 0; 
+    background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0.5)));
+    background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.5) 100%);
+    background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.5) 100%);
+    background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.5) 100%);
+    background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.5) 100%);
+}
+    #prev:hover, #next:hover { background-color:rgba(255,255,255,0.7);}
+
+.topper {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left:0;
+  right:0;
+  margin: 0 auto!important;
+  width: 50%;
+  height: 15px;
+  display:table;
+  padding:0;
+  z-index:99;
+}
+  .topper li {
+    list-style: none;
+    display: table-cell;
+    width: auto;
+    height: 100%;
+    background-color: rgba(255,255,255,0.3);
+  }
+    .topper li:hover {
+      background-color: rgba(255,255,255,0.7);
+    }
+    .topper li.selected {
+      background-color: rgba(255,255,255,0.8);
+    }
+.resize {
+  cursor: pointer;
+  position: absolute;
+  height: 0;
+  width: 50%;
+  bottom: 1%;
+  left:0;
+  right:0;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 700;
+  font-family: sans-serif;
+  z-index:99;
+  color: rgba(255,255,255,0.5);
+}
+  .resize:hover {
+      color: rgba(255,255,255,0.8);
+  }
+
+#overlay {
+  position:fixed;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  background:black url(/../../../img/snurrsnurr.png) no-repeat scroll center center;
+  z-index: 99;
+}
+
+#lightbox {
+  position:fixed;
+  z-index: 100;
+}
