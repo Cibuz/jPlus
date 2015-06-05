@@ -112,7 +112,7 @@
   left:0;
   height:100%;
   width:100%;
-  background:black url(/../../../img/snurrsnurr.png) no-repeat scroll center center;
+  background: url(http://dbwebb.se/img/loader.gif) no-repeat scroll center center;
   z-index: 99;
 }
 
