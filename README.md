@@ -63,7 +63,7 @@ The values below are the defaults:
 ```javascript
 duration: 3000, //in milliseconds, default is thus 3 seconds
 auto: true, //set to false for a static slideshow
-opacity: 0.8, //the default means 80% visibility
+opacity: 0.8, //the opacity of the black overlay behind the lightbox
 color: '#ffffff' //change to any 6 digit hexcolour of your choosing
 ```
 
